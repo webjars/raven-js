@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>raven-js</artifactId>
-    <version>3.26.4-SNAPSHOT</version>
+    <version>3.26.4</version>
     <name>Raven.js</name>
     <description>WebJar for Raven.js</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/raven-js</url>
         <connection>scm:git:https://github.com/webjars/raven-js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/raven-js.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>raven-js-3.26.4</tag>
     </scm>
     
     <build>
@@ -65,10 +65,10 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}"/>
-                                <get src="${upstream.url}/raven.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/raven.min.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/raven.min.js.map" dest="${destDir}"/>
+                                <mkdir dir="${destDir}" />
+                                <get src="${upstream.url}/raven.js" dest="${destDir}" />
+                                <get src="${upstream.url}/raven.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/raven.min.js.map" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
